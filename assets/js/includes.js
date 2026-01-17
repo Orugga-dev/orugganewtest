@@ -34,7 +34,7 @@
         home: "./index.html",
         services: "./services.html",      // ✅ ALWAYS PAGE
         about: "./about-us.html",         // ✅ ALWAYS PAGE (FIX)
-        contact: "./index.html#contact",  // ✅ go to contact section on home
+        contact: "./contact.html",  // ✅ go to contact section on home
       };
     }
 
