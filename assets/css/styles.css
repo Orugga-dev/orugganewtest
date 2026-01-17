@@ -636,3 +636,37 @@ body{
     display:none;
   }
 }
+/* =========================
+   CAPABILITY FIELD — AMBIENT LIFE
+   ========================= */
+
+@media (prefers-reduced-motion: no-preference){
+
+  /* Move the technical grid very slowly */
+  .capability-field-bg{
+    animation: gridDrift 42s linear infinite;
+  }
+
+  @keyframes gridDrift{
+    0%{
+      background-position: 0 0;
+    }
+    100%{
+      background-position: 120px 120px;
+    }
+  }
+
+  /* Subtle breathing of the whole field */
+  .capability-field{
+    animation: fieldBreath 18s ease-in-out infinite;
+  }
+
+  @keyframes fieldBreath{
+    0%,100%{
+      opacity: .96;
+    }
+    50%{
+      opacity: 1;
+    }
+  }
+}
