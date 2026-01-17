@@ -94,10 +94,42 @@
     });
   }
 
+  /* =====================================================
+     Reveal on scroll (for [data-reveal])
+     - visible animation on scroll-in
+     - safe to call multiple times (guarded)
+     - works even if header/footer are not injected
+  ====================================================== */
+  function initRevealOnScroll() {
+    if (window.__oruggaRevealInit) return;
+    window.__oruggaRevealInit = true;
+
+    const items = document.querySelectorAll("[data-reveal]");
+    if (!items.length) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    items.forEach((el) => observer.observe(el));
+  }
+
   async function injectPartials() {
     const headerHost = document.getElementById("siteHeader");
     const footerHost = document.getElementById("siteFooter");
-    if (!headerHost || !footerHost) return;
+
+    // Even if a page doesn't use partials, we still want reveal-on-scroll.
+    // We'll init reveal below on DOMContentLoaded too; this is an extra safety net.
+    if (!headerHost || !footerHost) {
+      return;
+    }
 
     const [headerHTML, footerHTML] = await Promise.all([
       fetch(P.partialHeader).then((r) => {
@@ -162,6 +194,16 @@
 
     initHeaderShrink();
     initMobileNav();
+
+    // If this page has reveal sections, initialize after partials too.
+    initRevealOnScroll();
+  }
+
+  // Init reveal as soon as DOM is ready (works even without header/footer)
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initRevealOnScroll, { once: true });
+  } else {
+    initRevealOnScroll();
   }
 
   injectPartials().catch((err) => {
