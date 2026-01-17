@@ -670,3 +670,32 @@ body{
     }
   }
 }
+/* =========================
+   HERO TITLES (Semantic)
+   ========================= */
+
+/* Hero estándar (Services, About, Contact) */
+.hero-title {
+  font-size: 2.25rem; /* text-4xl */
+  line-height: 1.05;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 3rem; /* md:text-5xl */
+  }
+}
+
+/* Hero primario (Home only) */
+.hero-title--primary {
+  font-size: 2.25rem; /* text-4xl */
+}
+
+@media (min-width: 768px) {
+  .hero-title--primary {
+    font-size: 3.75rem; /* md:text-6xl */
+  }
+}
