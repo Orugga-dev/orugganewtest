@@ -587,3 +587,52 @@ body{
     transform:none;
   }
 }
+/* =========================
+   CAPABILITY FIELD — SCAN EFFECT
+   ========================= */
+
+.capability-item::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  top:50%;
+  height:1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255,255,255,.35),
+    transparent
+  );
+  opacity:0;
+  transform: translateY(-50%) scaleX(.2);
+  pointer-events:none;
+}
+
+/* trigger on hover */
+.capability-item:hover::after,
+.capability-item:focus-within::after{
+  opacity:1;
+  animation: capabilityScan 720ms ease-out forwards;
+}
+
+@keyframes capabilityScan{
+  0%{
+    transform: translateY(-50%) scaleX(.15);
+    opacity:.0;
+  }
+  30%{
+    opacity:.45;
+  }
+  100%{
+    transform: translateY(-50%) scaleX(1);
+    opacity:0;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .capability-item::after{
+    display:none;
+  }
+}
