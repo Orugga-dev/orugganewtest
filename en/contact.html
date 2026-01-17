@@ -1,27 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
   <title>Contact — Orugga</title>
 
-  <!-- Main styles -->
-  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Tailwind CDN (same as other pages) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            accent: '#6FBF8E',
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="../assets/css/styles.css" />
 </head>
 
-<body class="bg-black text-white antialiased">
+<body class="bg-[#070B14] text-white antialiased">
 
-  <!-- ================= HEADER (injected) ================= -->
+  <!-- Header (injected) -->
   <div id="siteHeader"></div>
 
-  <!-- ================= HERO ================= -->
-  <section class="relative overflow-hidden min-h-[70vh] hero hero--subtle">
-
+  <!-- HERO -->
+  <section class="relative overflow-hidden min-h-[60vh]">
     <canvas id="heroParticles" class="hero-particles"></canvas>
 
-    <div class="hero-content mx-auto max-w-7xl px-6 pt-16 md:pt-24 pb-16 md:pb-24">
-
+    <div class="hero-content mx-auto max-w-7xl px-6 pt-20 md:pt-28 pb-16">
       <p class="text-xs uppercase tracking-[0.22em] text-slate-400">
         Contact
       </p>
@@ -31,90 +53,84 @@
       </h1>
 
       <p class="mt-6 max-w-3xl text-base md:text-lg leading-relaxed text-slate-300">
-        From strategy and design to production delivery, we work as a reliable
-        engineering partner focused on results.
+        From strategy and design to production delivery, we work as a reliable engineering partner focused on results.
       </p>
-
     </div>
   </section>
 
-  <!-- ================= CONTACT CONTENT ================= -->
-  <section class="mx-auto max-w-7xl px-6 py-16 md:py-24">
-
+  <!-- CONTACT CONTENT -->
+  <section class="mx-auto max-w-7xl px-6 pb-24">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
 
-      <!-- ===== LEFT: CONTACT INFO ===== -->
-      <div class="bg-backgroundCard/60 border border-white/5 rounded-2xl p-8 md:p-10 shadow-lg">
-
-        <div class="space-y-10 text-slate-200">
+      <!-- Info -->
+      <div class="bg-white/5 border border-white/10 rounded-3xl p-8 md:p-10">
+        <div class="space-y-8 text-slate-200">
 
           <div>
-            <p class="text-xs uppercase tracking-[0.22em] text-slate-400">
+            <p class="text-xs uppercase tracking-wider text-slate-400 mb-2">
               Address
             </p>
-            <p class="mt-2 leading-relaxed">
+            <p>
               Paraná 522, Piso 2 Of 22<br />
               CABA, Argentina
             </p>
           </div>
 
           <div>
-            <p class="text-xs uppercase tracking-[0.22em] text-slate-400">
+            <p class="text-xs uppercase tracking-wider text-slate-400 mb-2">
               Address
             </p>
-            <p class="mt-2 leading-relaxed">
+            <p>
               89 Meadowood Dr, Apt A4<br />
               Carbondale, CO 81623, United States
             </p>
           </div>
 
           <div>
-            <p class="text-xs uppercase tracking-[0.22em] text-slate-400">
+            <p class="text-xs uppercase tracking-wider text-slate-400 mb-2">
               E-mail
             </p>
-            <p class="mt-2">
-              <a href="mailto:orugga@orugga.com"
-                 class="text-white hover:text-accent transition">
-                orugga@orugga.com
-              </a>
-            </p>
+            <a
+              href="mailto:orugga@orugga.com"
+              class="text-white hover:text-accent transition"
+            >
+              orugga@orugga.com
+            </a>
           </div>
 
         </div>
       </div>
 
-      <!-- ===== RIGHT: FORM ===== -->
-      <div class="bg-backgroundCard/60 border border-white/5 rounded-2xl p-8 md:p-10 shadow-lg">
+      <!-- Form -->
+      <div class="bg-white/5 border border-white/10 rounded-3xl p-8 md:p-10">
+        <form class="grid grid-cols-1 gap-5">
 
-        <form class="space-y-6">
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <input
               type="text"
               placeholder="Name"
-              class="w-full rounded-xl bg-black/40 border border-white/10 px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-accent"
+              class="rounded-xl bg-black/40 border border-white/10 px-4 py-3 text-sm text-white placeholder-slate-400 focus:outline-none focus:border-accent"
             />
-
             <input
               type="email"
               placeholder="Email"
-              class="w-full rounded-xl bg-black/40 border border-white/10 px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-accent"
+              class="rounded-xl bg-black/40 border border-white/10 px-4 py-3 text-sm text-white placeholder-slate-400 focus:outline-none focus:border-accent"
             />
           </div>
 
           <input
             type="text"
             placeholder="Subject"
-            class="w-full rounded-xl bg-black/40 border border-white/10 px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-accent"
+            class="rounded-xl bg-black/40 border border-white/10 px-4 py-3 text-sm text-white placeholder-slate-400 focus:outline-none focus:border-accent"
           />
 
           <textarea
             rows="5"
             placeholder="Message"
-            class="w-full rounded-xl bg-black/40 border border-white/10 px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-accent resize-none"
+            class="rounded-xl bg-black/40 border border-white/10 px-4 py-3 text-sm text-white placeholder-slate-400 focus:outline-none focus:border-accent resize-none"
           ></textarea>
 
-          <div>
+          <div class="pt-2">
             <button
               type="submit"
               class="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-black hover:bg-slate-100 transition"
@@ -129,12 +145,12 @@
     </div>
   </section>
 
-  <!-- ================= FOOTER (injected) ================= -->
+  <!-- Footer (injected) -->
   <div id="siteFooter"></div>
 
-  <!-- ================= SCRIPTS ================= -->
-  <script src="./assets/js/site.js"></script>
-  <script src="./assets/js/hero-particles.js"></script>
+  <!-- Scripts -->
+  <script src="../assets/js/site.js"></script>
+  <script src="../assets/js/hero-particles.js"></script>
 
 </body>
 </html>
