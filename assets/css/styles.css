@@ -500,3 +500,90 @@ body{
   gap: 16px;
 }
 
+/* =========================
+   REVEAL ON SCROLL (generic)
+   Used by Capability Field
+   ========================= */
+
+[data-reveal]{
+  opacity:0;
+  transform: translateY(12px);
+  transition:
+    opacity 520ms ease,
+    transform 520ms ease;
+}
+
+[data-reveal].is-visible{
+  opacity:1;
+  transform: translateY(0);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce){
+  [data-reveal],
+  [data-reveal].is-visible{
+    opacity:1;
+    transform:none;
+    transition:none;
+  }
+}
+
+/* =========================
+   CAPABILITY FIELD — HOVER
+   (Technology choices)
+   ========================= */
+
+/* Wrapper is already .group in HTML */
+.capability-item{
+  position:relative;
+  padding-left:24px;
+  transition: transform 180ms ease;
+}
+
+/* Vertical technical marker */
+.capability-item::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:6px;
+  width:1px;
+  height:20px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,.0),
+    rgba(255,255,255,.35),
+    rgba(255,255,255,.0)
+  );
+  opacity:0;
+  transition: opacity 180ms ease;
+}
+
+/* Hover / focus */
+.capability-item:hover,
+.capability-item:focus-within{
+  transform: translateX(2px);
+}
+
+.capability-item:hover::before,
+.capability-item:focus-within::before{
+  opacity:1;
+}
+
+/* Text contrast refinement on hover */
+.capability-item:hover h3,
+.capability-item:focus-within h3{
+  color:#fff;
+}
+
+.capability-item:hover p,
+.capability-item:focus-within p{
+  color:rgba(226,232,240,.95);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .capability-item,
+  .capability-item:hover{
+    transform:none;
+  }
+}
