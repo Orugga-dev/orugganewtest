@@ -3,152 +3,114 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact — Orugga</title>
 
-  <!-- Google Fonts -->
+  <title>Contact — Orugga</title>
+  <meta name="description" content="Contact Orugga. From strategy and design to production delivery, we work as a reliable engineering partner focused on results." />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <!-- Tailwind CDN (same as other pages) -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'system-ui', 'sans-serif'],
-          },
-          colors: {
-            accent: '#6FBF8E',
-          },
-        },
-      },
-    }
-  </script>
-
-  <!-- Site styles -->
-  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <!-- Main CSS (el mismo que usan todas las páginas) -->
+  <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 
-<body class="bg-[#070B14] text-white antialiased">
+<body>
 
-  <!-- Header (injected) -->
+  <!-- Header injected by site.js -->
   <div id="siteHeader"></div>
 
-  <!-- HERO -->
-  <section class="relative overflow-hidden min-h-[60vh]">
+  <!-- ================= CONTACT HERO ================= -->
+  <section class="relative overflow-hidden min-h-[70vh]">
     <canvas id="heroParticles" class="hero-particles"></canvas>
 
-    <div class="hero-content mx-auto max-w-7xl px-6 pt-20 md:pt-28 pb-16">
+    <div class="hero-content mx-auto max-w-7xl px-6 pt-16 md:pt-24 pb-14 md:pb-20">
       <p class="text-xs uppercase tracking-[0.22em] text-slate-400">
         Contact
       </p>
 
       <h1 class="mt-4 text-4xl md:text-6xl font-extrabold tracking-tight text-white max-w-4xl">
-        Ready to build your <span class="text-accent">next product</span>?
+        Ready to build your <span class="text-[#6FBF8E]">next product</span>?
       </h1>
 
       <p class="mt-6 max-w-3xl text-base md:text-lg leading-relaxed text-slate-300">
-        From strategy and design to production delivery, we work as a reliable engineering partner focused on results.
+        From strategy and design to production delivery, we work as a reliable engineering
+        partner focused on results.
       </p>
     </div>
   </section>
 
-  <!-- CONTACT CONTENT -->
+  <!-- ================= CONTACT CONTENT ================= -->
   <section class="mx-auto max-w-7xl px-6 pb-24">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
 
-      <!-- Info -->
-      <div class="bg-white/5 border border-white/10 rounded-3xl p-8 md:p-10">
-        <div class="space-y-8 text-slate-200">
+      <!-- Address -->
+      <div class="bg-backgroundCard/60 border border-white/5 rounded-2xl p-8 md:p-10 shadow-lg">
+        <p class="text-xs uppercase tracking-[0.22em] text-slate-400">Address</p>
 
-          <div>
-            <p class="text-xs uppercase tracking-wider text-slate-400 mb-2">
-              Address
-            </p>
-            <p>
-              Paraná 522, Piso 2 Of 22<br />
-              CABA, Argentina
-            </p>
-          </div>
+        <p class="mt-4 text-slate-200 leading-relaxed">
+          Paraná 522, Piso 2 Of 22<br />
+          CABA, Argentina
+        </p>
 
-          <div>
-            <p class="text-xs uppercase tracking-wider text-slate-400 mb-2">
-              Address
-            </p>
-            <p>
-              89 Meadowood Dr, Apt A4<br />
-              Carbondale, CO 81623, United States
-            </p>
-          </div>
+        <p class="mt-6 text-slate-200 leading-relaxed">
+          89 Meadowood Dr, Apt A4<br />
+          Carbondale, CO 81623, United States
+        </p>
 
-          <div>
-            <p class="text-xs uppercase tracking-wider text-slate-400 mb-2">
-              E-mail
-            </p>
-            <a
-              href="mailto:orugga@orugga.com"
-              class="text-white hover:text-accent transition"
-            >
-              orugga@orugga.com
-            </a>
-          </div>
-
-        </div>
+        <p class="mt-6 text-slate-200">
+          <span class="text-xs uppercase tracking-[0.22em] text-slate-400 block mb-1">E-mail</span>
+          <a href="mailto:orugga@orugga.com" class="hover:text-white transition">
+            orugga@orugga.com
+          </a>
+        </p>
       </div>
 
       <!-- Form -->
-      <div class="bg-white/5 border border-white/10 rounded-3xl p-8 md:p-10">
-        <form class="grid grid-cols-1 gap-5">
-
+      <div class="bg-backgroundCard/60 border border-white/5 rounded-2xl p-8 md:p-10 shadow-lg">
+        <form class="space-y-5">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <input
               type="text"
               placeholder="Name"
-              class="rounded-xl bg-black/40 border border-white/10 px-4 py-3 text-sm text-white placeholder-slate-400 focus:outline-none focus:border-accent"
+              class="w-full rounded-xl bg-black/30 border border-white/10 px-4 py-3 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-[#6FBF8E]/40"
             />
             <input
               type="email"
               placeholder="Email"
-              class="rounded-xl bg-black/40 border border-white/10 px-4 py-3 text-sm text-white placeholder-slate-400 focus:outline-none focus:border-accent"
+              class="w-full rounded-xl bg-black/30 border border-white/10 px-4 py-3 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-[#6FBF8E]/40"
             />
           </div>
 
           <input
             type="text"
             placeholder="Subject"
-            class="rounded-xl bg-black/40 border border-white/10 px-4 py-3 text-sm text-white placeholder-slate-400 focus:outline-none focus:border-accent"
+            class="w-full rounded-xl bg-black/30 border border-white/10 px-4 py-3 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-[#6FBF8E]/40"
           />
 
           <textarea
             rows="5"
             placeholder="Message"
-            class="rounded-xl bg-black/40 border border-white/10 px-4 py-3 text-sm text-white placeholder-slate-400 focus:outline-none focus:border-accent resize-none"
+            class="w-full rounded-xl bg-black/30 border border-white/10 px-4 py-3 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-[#6FBF8E]/40"
           ></textarea>
 
-          <div class="pt-2">
-            <button
-              type="submit"
-              class="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-black hover:bg-slate-100 transition"
-            >
-              Submit
-            </button>
-          </div>
-
+          <button
+            type="submit"
+            class="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-black hover:bg-slate-100 transition"
+          >
+            Submit
+          </button>
         </form>
       </div>
 
     </div>
   </section>
 
-  <!-- Footer (injected) -->
+  <!-- Footer injected by site.js -->
   <div id="siteFooter"></div>
 
-  <!-- Scripts -->
+  <!-- ================= SCRIPTS (CRÍTICO) ================= -->
   <script src="../assets/js/site.js"></script>
   <script src="../assets/js/hero-particles.js"></script>
 
