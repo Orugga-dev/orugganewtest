@@ -3,108 +3,138 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Contact — Orugga</title>
 
-  <!-- Main CSS (el mismo que el resto del sitio) -->
+  <!-- Main styles -->
   <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
 
 <body class="bg-black text-white antialiased">
 
-  <!-- HEADER (idéntico al resto) -->
-  <header class="header">
-    <!-- header compartido -->
-  </header>
+  <!-- ================= HEADER (injected) ================= -->
+  <div id="siteHeader"></div>
 
-  <main>
+  <!-- ================= HERO ================= -->
+  <section class="relative overflow-hidden min-h-[70vh] hero hero--subtle">
 
-    <!-- ================= HERO ================= -->
-    <section class="relative overflow-hidden min-h-[60vh]">
-      <canvas id="heroParticles" class="hero-particles"></canvas>
+    <canvas id="heroParticles" class="hero-particles"></canvas>
 
-      <div class="hero-content mx-auto max-w-7xl px-6 pt-20 md:pt-28 pb-14 md:pb-20">
+    <div class="hero-content mx-auto max-w-7xl px-6 pt-16 md:pt-24 pb-16 md:pb-24">
 
-        <p class="text-xs uppercase tracking-[0.22em] text-slate-400">
-          Contact
-        </p>
+      <p class="text-xs uppercase tracking-[0.22em] text-slate-400">
+        Contact
+      </p>
 
-        <h1 class="mt-3 text-4xl md:text-6xl font-extrabold tracking-tight text-white max-w-4xl">
-          Ready to build your
-          <span class="text-[color:var(--accent)]">next product?</span>
-        </h1>
+      <h1 class="mt-4 text-4xl md:text-6xl font-extrabold tracking-tight text-white max-w-4xl">
+        Ready to build your <span class="text-accent">next product</span>?
+      </h1>
 
-        <p class="mt-6 max-w-3xl text-base md:text-lg leading-relaxed text-slate-300">
-          From strategy and design to production delivery, we work as a reliable
-          engineering partner focused on results.
-        </p>
+      <p class="mt-6 max-w-3xl text-base md:text-lg leading-relaxed text-slate-300">
+        From strategy and design to production delivery, we work as a reliable
+        engineering partner focused on results.
+      </p>
 
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ================= CONTACT CONTENT ================= -->
-    <section class="mx-auto max-w-7xl px-6 pb-24">
+  <!-- ================= CONTACT CONTENT ================= -->
+  <section class="mx-auto max-w-7xl px-6 py-16 md:py-24">
 
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
 
-        <!-- LEFT -->
-        <div class="bg-white/5 border border-white/10 rounded-2xl p-8 md:p-10">
-          <p class="text-xs uppercase tracking-[0.22em] text-slate-400 mb-6">
-            Address
-          </p>
+      <!-- ===== LEFT: CONTACT INFO ===== -->
+      <div class="bg-backgroundCard/60 border border-white/5 rounded-2xl p-8 md:p-10 shadow-lg">
 
-          <p class="text-white font-medium">
-            Paraná 522, Piso 2 Of 22<br />
-            CABA, Argentina
-          </p>
+        <div class="space-y-10 text-slate-200">
 
-          <p class="mt-6 text-white font-medium">
-            89 Meadowood Dr, Apt A4<br />
-            Carbondale, CO 81623, United States
-          </p>
+          <div>
+            <p class="text-xs uppercase tracking-[0.22em] text-slate-400">
+              Address
+            </p>
+            <p class="mt-2 leading-relaxed">
+              Paraná 522, Piso 2 Of 22<br />
+              CABA, Argentina
+            </p>
+          </div>
 
-          <p class="mt-8 text-slate-300">
-            <span class="block text-xs uppercase tracking-[0.22em] text-slate-400 mb-2">
+          <div>
+            <p class="text-xs uppercase tracking-[0.22em] text-slate-400">
+              Address
+            </p>
+            <p class="mt-2 leading-relaxed">
+              89 Meadowood Dr, Apt A4<br />
+              Carbondale, CO 81623, United States
+            </p>
+          </div>
+
+          <div>
+            <p class="text-xs uppercase tracking-[0.22em] text-slate-400">
               E-mail
-            </span>
-            orugga@orugga.com
-          </p>
+            </p>
+            <p class="mt-2">
+              <a href="mailto:orugga@orugga.com"
+                 class="text-white hover:text-accent transition">
+                orugga@orugga.com
+              </a>
+            </p>
+          </div>
+
         </div>
+      </div>
 
-        <!-- RIGHT (FORM) -->
-        <div class="bg-white/5 border border-white/10 rounded-2xl p-8 md:p-10">
-          <form class="space-y-6">
+      <!-- ===== RIGHT: FORM ===== -->
+      <div class="bg-backgroundCard/60 border border-white/5 rounded-2xl p-8 md:p-10 shadow-lg">
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <input type="text" placeholder="Name" class="input" />
-              <input type="email" placeholder="Email" class="input" />
-            </div>
+        <form class="space-y-6">
 
-            <input type="text" placeholder="Subject" class="input" />
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <input
+              type="text"
+              placeholder="Name"
+              class="w-full rounded-xl bg-black/40 border border-white/10 px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-accent"
+            />
 
-            <textarea rows="5" placeholder="Message" class="input"></textarea>
+            <input
+              type="email"
+              placeholder="Email"
+              class="w-full rounded-xl bg-black/40 border border-white/10 px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-accent"
+            />
+          </div>
 
+          <input
+            type="text"
+            placeholder="Subject"
+            class="w-full rounded-xl bg-black/40 border border-white/10 px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-accent"
+          />
+
+          <textarea
+            rows="5"
+            placeholder="Message"
+            class="w-full rounded-xl bg-black/40 border border-white/10 px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-accent resize-none"
+          ></textarea>
+
+          <div>
             <button
               type="submit"
               class="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-black hover:bg-slate-100 transition"
             >
               Submit
             </button>
+          </div>
 
-          </form>
-        </div>
-
+        </form>
       </div>
-    </section>
 
-  </main>
+    </div>
+  </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <!-- footer compartido -->
-  </footer>
+  <!-- ================= FOOTER (injected) ================= -->
+  <div id="siteFooter"></div>
 
-  <!-- Particles JS -->
-  <script src="./assets/js/heroParticles.js"></script>
+  <!-- ================= SCRIPTS ================= -->
+  <script src="./assets/js/site.js"></script>
+  <script src="./assets/js/hero-particles.js"></script>
 
 </body>
 </html>
