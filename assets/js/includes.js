@@ -11,8 +11,10 @@
 
   // Relative paths (GitHub Pages safe)
   const P = {
-    partialHeader: "../partials/header.html",
-    partialFooter: "../partials/footer.html",
+    // ✅ Language-specific partials (same structure/classes, only copy changes)
+    partialHeader: `../partials/${lang}/header.html`,
+    partialFooter: `../partials/${lang}/footer.html`,
+
     logo: "../assets/img/orugga_logo_white_transparent_wgreen.png",
 
     // Keep it simple for now: language switch goes to the other language home.
@@ -26,15 +28,15 @@
    * - Home        → index.html
    * - Services    → services.html (ALWAYS, hero at top)
    * - About us    → about-us.html (ALWAYS, hero at top)
-   * - Contact     → anchor on index (index#contact)
+   * - Contact     → contact.html (EN) / index#contacto (ES for now)
    */
   function getRoutes(language) {
     if (language === "en") {
       return {
         home: "./index.html",
-        services: "./services.html",      // ✅ ALWAYS PAGE
-        about: "./about-us.html",         // ✅ ALWAYS PAGE (FIX)
-        contact: "./contact.html",  // ✅ go to contact section on home
+        services: "./services.html", // ✅ ALWAYS PAGE
+        about: "./about-us.html",    // ✅ ALWAYS PAGE
+        contact: "./contact.html",   // ✅ CONTACT PAGE
       };
     }
 
@@ -162,7 +164,7 @@
     if (navServices) navServices.href = routes.services;
 
     const navAbout = headerHost.querySelector('[data-nav="about"]');
-    if (navAbout) navAbout.href = routes.about; // ✅ now goes to about-us.html
+    if (navAbout) navAbout.href = routes.about;
 
     const navContact = headerHost.querySelector('[data-nav="contact"]');
     if (navContact) navContact.href = routes.contact;
@@ -185,7 +187,7 @@
     if (fServices) fServices.href = routes.services;
 
     const fAbout = footerHost.querySelector('[data-foot="about"]');
-    if (fAbout) fAbout.href = routes.about; // ✅ now goes to about-us.html
+    if (fAbout) fAbout.href = routes.about;
 
     const fContact = footerHost.querySelector('[data-foot="contact"]');
     if (fContact) fContact.href = routes.contact;
