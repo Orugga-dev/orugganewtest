@@ -45,7 +45,7 @@
       home: "./index.html",
       services: "./services.html",
       about: "./about-us.html",
-      contact: "./index.html#contacto",
+      contact: "./contact.html",
     };
   }
 
