@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#070B14" />
   <!-- Favicons -->
 <link rel="icon" href="../assets/img/favicon.ico" sizes="any">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
@@ -17,6 +18,7 @@
   <meta name="author" content="Orugga">
   <link rel="alternate" hreflang="es" href="https://www.orugga.com/es/index.html">
   <link rel="alternate" hreflang="en" href="https://www.orugga.com/en/index.html">
+  <link rel="alternate" hreflang="x-default" href="https://www.orugga.com/">
   <link rel="canonical" href="https://www.orugga.com/es/index.html">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_AR">
@@ -424,14 +426,43 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": ["Organization", "ProfessionalService"],
     "name": "Orugga",
     "url": "https://www.orugga.com",
     "logo": "https://www.orugga.com/assets/img/orugga_logo_white_transparent_wgreen.png",
     "foundingDate": "2005",
+    "slogan": "Ingeniería senior de software con entrega real.",
+    "email": "orugga@orugga.com",
     "description": "Software factory especializada en soluciones de IA, desarrollo móvil y plataformas escalables. Más de 20 años de experiencia sirviendo empresas globales.",
     "areaServed": ["AR", "US", "LATAM", "Worldwide"],
     "knowsAbout": ["Desarrollo de Software", "Inteligencia Artificial", "Desarrollo Móvil", "Fintech", "Diseño UI/UX", "Integración de Sistemas"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Servicios Orugga",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Ingeniería de producto con IA"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Desarrollo de apps móviles"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Plataformas fintech"
+          }
+        }
+      ]
+    },
     "address": [
       {
         "@type": "PostalAddress",
@@ -446,7 +477,8 @@
       "contactType": "sales"
     },
     "sameAs": [
-      "https://www.linkedin.com/company/orugga"
+      "https://www.linkedin.com/company/orugga",
+      "https://www.orugga.com/es/index.html"
     ]
   }
   </script>

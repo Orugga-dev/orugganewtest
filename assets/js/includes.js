@@ -199,6 +199,12 @@
       );
     }
 
+    headerHost.querySelectorAll("[data-lang-current]").forEach((badge) => {
+      badge.textContent = lang === "en" ? "EN" : "ES";
+      badge.setAttribute("aria-label", lang === "en" ? "Current language English" : "Idioma actual español");
+      badge.setAttribute("aria-current", "true");
+    });
+
     /* ================= FOOTER ================= */
 
     const fHome = footerHost.querySelector('[data-foot="home"]');

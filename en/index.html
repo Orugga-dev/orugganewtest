@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#070B14" />
   <!-- Favicons -->
 <link rel="icon" href="../assets/img/favicon.ico" sizes="any">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
@@ -19,7 +20,7 @@
   <!-- Hreflang for bilingual site -->
   <link rel="alternate" hreflang="en" href="https://www.orugga.com/en/index.html">
   <link rel="alternate" hreflang="es" href="https://www.orugga.com/es/index.html">
-  <link rel="alternate" hreflang="x-default" href="https://www.orugga.com/en/index.html">
+  <link rel="alternate" hreflang="x-default" href="https://www.orugga.com/">
   <link rel="canonical" href="https://www.orugga.com/en/index.html">
 
   <!-- Open Graph -->
@@ -431,14 +432,43 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": ["Organization", "ProfessionalService"],
     "name": "Orugga",
     "url": "https://www.orugga.com",
     "logo": "https://www.orugga.com/assets/img/orugga_logo_white_transparent_wgreen.png",
     "foundingDate": "2005",
+    "slogan": "Senior software engineering with execution you can trust.",
+    "email": "orugga@orugga.com",
     "description": "Software factory specializing in AI solutions, mobile development, and scalable software platforms. 20+ years of experience serving global companies.",
     "areaServed": ["AR", "US", "LATAM", "Worldwide"],
     "knowsAbout": ["Software Development", "Artificial Intelligence", "Mobile Development", "Fintech", "UI/UX Design", "System Integration"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Orugga services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "AI product engineering"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Mobile app development"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Fintech platform development"
+          }
+        }
+      ]
+    },
     "address": [
       {
         "@type": "PostalAddress",
@@ -461,7 +491,8 @@
       "contactType": "sales"
     },
     "sameAs": [
-      "https://www.linkedin.com/company/orugga"
+      "https://www.linkedin.com/company/orugga",
+      "https://www.orugga.com/en/index.html"
     ]
   }
   </script>
