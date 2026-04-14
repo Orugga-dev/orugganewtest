@@ -42,6 +42,13 @@
     .tech-pill { font-size:12px;font-weight:500;color:rgba(255,255,255,0.55);background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:999px;padding:4px 12px; }
     .back-link { display:inline-flex;align-items:center;gap:6px;font-size:13px;color:rgba(255,255,255,0.4);text-decoration:none;transition:color 0.2s; }
     .back-link:hover { color:rgba(255,255,255,0.8); }
+    .brand-ribbon { display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;padding:1rem 1.1rem;border:1px solid rgba(255,255,255,0.08);border-radius:18px;background:rgba(255,255,255,0.03);margin-bottom:1.25rem; }
+    .brand-lockup { display:flex;align-items:flex-start;gap:0.9rem; }
+    .brand-logo { width:42px;height:auto;flex:none;opacity:0.95;margin-top:2px; }
+    .brand-eyebrow { font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#6FBF8E; }
+    .brand-copy { font-size:13px;line-height:1.55;color:rgba(255,255,255,0.7);max-width:36rem;margin-top:4px; }
+    .brand-link { display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:#6FBF8E;text-decoration:none;white-space:nowrap; }
+    .brand-link:hover { color:#8fd6aa; }
     .insight-block { border-left:2px solid #6FBF8E;padding-left:1.25rem;margin:2rem 0; }
 
     /* Stat cards */
@@ -63,6 +70,7 @@
     .pos-cell.header { font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,0.4);background:rgba(255,255,255,0.03); }
     .pos-cell.bad { color:rgba(255,255,255,0.35); }
     .pos-cell.good { color:rgba(255,255,255,0.85); }
+    @media (max-width: 640px) { .brand-ribbon { flex-direction:column; } }
   </style>
 </head>
 
@@ -76,6 +84,17 @@
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
       Back to services
     </a>
+
+    <div class="brand-ribbon">
+      <div class="brand-lockup">
+        <img src="../../assets/img/orugga_logo_white_transparent_wgreen.png" alt="Orugga logo" class="brand-logo">
+        <div>
+          <div class="brand-eyebrow">Orugga case study</div>
+          <p class="brand-copy">This project was designed and delivered by Orugga, a senior software engineering partner for AI products, mobile apps, fintech platforms, and complex integrations.</p>
+        </div>
+      </div>
+      <a href="../about-us.html" class="brand-link">Meet Orugga</a>
+    </div>
 
     <!-- HEADER -->
     <div class="mb-4 flex flex-wrap items-center gap-2">
