@@ -1,150 +1,78 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<header class="header fixed inset-x-0 top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-black/30 bg-black/20 border-b border-white/10 transition-[background,box-shadow] duration-200">
+  <div class="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between gap-4 header-inner transition-[padding] duration-200">
+    <!-- Logo / Home -->
+    <a class="flex items-center gap-3" data-home href="./index.html" aria-label="Go to Orugga home">
+      <img
+        data-logo
+        class="logo-img h-22 md:h-24 w-auto opacity-90 hover:opacity-100 transition"
+        alt="Orugga — Mobile Innovation &amp; Software Factory"
+      />
+    </a>
 
-  <url>
-    <loc>https://www.orugga.com/en/index.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.orugga.com/en/index.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.orugga.com/es/index.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.orugga.com/"/>
-    <lastmod>2026-04-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.orugga.com/es/index.html</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.orugga.com/es/index.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.orugga.com/en/index.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.orugga.com/"/>
-    <lastmod>2026-04-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.orugga.com/en/services.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.orugga.com/en/services.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.orugga.com/es/services.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.orugga.com/en/services.html"/>
-    <lastmod>2026-04-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.orugga.com/es/services.html</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.orugga.com/es/services.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.orugga.com/en/services.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.orugga.com/en/services.html"/>
-    <lastmod>2026-04-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.orugga.com/en/about-us.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.orugga.com/en/about-us.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.orugga.com/es/about-us.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.orugga.com/en/about-us.html"/>
-    <lastmod>2026-04-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.orugga.com/es/about-us.html</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.orugga.com/es/about-us.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.orugga.com/en/about-us.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.orugga.com/en/about-us.html"/>
-    <lastmod>2026-04-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.orugga.com/en/contact.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.orugga.com/en/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.orugga.com/es/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.orugga.com/en/contact.html"/>
-    <lastmod>2026-04-08</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.orugga.com/es/contact.html</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.orugga.com/es/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.orugga.com/en/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.orugga.com/en/contact.html"/>
-    <lastmod>2026-04-08</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.orugga.com/en/work/fintech-lending.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.orugga.com/en/work/fintech-lending.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.orugga.com/es/work/fintech-lending.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.orugga.com/en/work/fintech-lending.html"/>
-    <lastmod>2026-04-08</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.orugga.com/es/work/fintech-lending.html</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.orugga.com/es/work/fintech-lending.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.orugga.com/en/work/fintech-lending.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.orugga.com/en/work/fintech-lending.html"/>
-    <lastmod>2026-04-08</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.orugga.com/en/work/cinemark-ticketing.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.orugga.com/en/work/cinemark-ticketing.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.orugga.com/es/work/cinemark-ticketing.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.orugga.com/en/work/cinemark-ticketing.html"/>
-    <lastmod>2026-04-08</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.orugga.com/es/work/cinemark-ticketing.html</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.orugga.com/es/work/cinemark-ticketing.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.orugga.com/en/work/cinemark-ticketing.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.orugga.com/en/work/cinemark-ticketing.html"/>
-    <lastmod>2026-04-08</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.orugga.com/en/work/adia.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.orugga.com/en/work/adia.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.orugga.com/es/work/adia.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.orugga.com/en/work/adia.html"/>
-    <lastmod>2026-04-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.orugga.com/es/work/adia.html</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.orugga.com/es/work/adia.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.orugga.com/en/work/adia.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.orugga.com/en/work/adia.html"/>
-    <lastmod>2026-04-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.orugga.com/en/work/latin-energy-invoices.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.orugga.com/en/work/latin-energy-invoices.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.orugga.com/es/work/latin-energy-invoices.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.orugga.com/en/work/latin-energy-invoices.html"/>
-    <lastmod>2026-04-08</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.orugga.com/es/work/latin-energy-invoices.html</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.orugga.com/es/work/latin-energy-invoices.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.orugga.com/en/work/latin-energy-invoices.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.orugga.com/en/work/latin-energy-invoices.html"/>
-    <lastmod>2026-04-08</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <!-- Desktop nav -->
+    <nav class="hidden md:flex items-center gap-8 text-sm text-slate-200" aria-label="Primary">
+      <a class="hover:text-white transition" data-nav="home" href="./index.html">Home</a>
+      <a class="hover:text-white transition" data-nav="services" href="./services.html">Services</a>
+      <a class="hover:text-white transition" data-nav="about" href="./about-us.html">About us</a>
+      <a class="hover:text-white transition" data-nav="contact" href="./contact.html">Contact</a>
+    </nav>
 
-</urlset>
+    <div class="flex items-center gap-3">
+      <span
+        data-lang-current
+        aria-current="true"
+        class="hidden sm:inline-flex items-center justify-center rounded-full border border-white/15 bg-white/10 px-3 py-2 text-sm font-medium text-white"
+      >
+        EN
+      </span>
+
+      <!-- CTA -->
+      <a
+        data-cta
+        href="./contact.html"
+        aria-label="Contact Orugga"
+        class="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-medium hover:bg-white/10 transition"
+      >
+        Contact us
+      </a>
+
+      <!-- Language switch -->
+      <a
+        data-lang-switch
+        href="../es/index.html"
+        aria-label="Switch site language to Spanish"
+        class="hidden sm:inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-3 py-2 text-sm font-medium hover:bg-white/10 transition"
+      >
+        ES
+      </a>
+
+      <!-- Mobile toggle -->
+      <button
+        type="button"
+        data-mobile-toggle
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="Open menu"
+        class="md:hidden inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 p-2 hover:bg-white/10 transition"
+      >
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="opacity-90">
+          <path d="M4 7H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M4 12H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M4 17H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile panel -->
+  <div id="mobile-menu" data-mobile-panel class="md:hidden hidden border-t border-white/10 bg-black/30 backdrop-blur">
+    <div class="mx-auto max-w-7xl px-6 py-4 flex flex-col gap-3 text-sm text-slate-200">
+      <span data-lang-current aria-current="true" class="inline-flex w-fit items-center justify-center rounded-full border border-white/15 bg-white/10 px-3 py-2 text-sm font-medium text-white">EN</span>
+      <a class="hover:text-white transition" data-nav="home" href="./index.html">Home</a>
+      <a class="hover:text-white transition" data-nav="services" href="./services.html">Services</a>
+      <a class="hover:text-white transition" data-nav="about" href="./about-us.html">About us</a>
+      <a class="hover:text-white transition" data-nav="contact" href="./contact.html">Contact</a>
+      <a class="hover:text-white transition sm:hidden" data-lang-switch href="../es/index.html">ES</a>
+    </div>
+  </div>
+</header>
